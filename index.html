@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Biodata - Your Name</title>
+  <style>
+    :root{
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      --accent:#2b6cb0;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --radius:12px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.45;
+      padding:28px;
+      display:flex;
+      justify-content:center;
+    }
+    .container{
+      width:100%;
+      max-width:780px;
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 8px 24px rgba(15,23,42,0.06);
+      padding:28px;
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      margin-bottom:18px;
+    }
+    .photo{
+      width:88px;
+      height:88px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent), #7aaef1);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      font-size:22px;
+      flex-shrink:0;
+    }
+    h1{margin:0;font-size:20px}
+    p.role{margin:4px 0 0;color:var(--muted)}
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+      margin-top:12px;
+    }
+    section{padding:12px;border-radius:8px;background:linear-gradient(180deg, rgba(0,0,0,0.02), transparent)}
+    section h2{margin:0 0 8px;font-size:15px}
+    ul{margin:0;padding-left:18px}
+    .contact {font-size:14px;color:var(--muted)}
+    .full{grid-column:1/-1}
+    @media (max-width:640px){
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main" aria-labelledby="nameHeading">
+    <header>
+      <div class="photo" aria-hidden="true">YN</div>
+      <div>
+        <h1 id="nameHeading">Your Name</h1>
+        <div class="role">Aspiring Web Developer / Student / Profession</div>
+        <div class="contact" style="margin-top:6px">
+          📧 youremail@example.com &nbsp; • &nbsp; 📞 +91-XXXXXXXXXX &nbsp; • &nbsp; City, Country
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section>
+        <h2>Personal Details</h2>
+        <ul>
+          <li><strong>Father's Name:</strong> Father Name</li>
+          <li><strong>Date of Birth:</strong> DD-MM-YYYY</li>
+          <li><strong>Gender:</strong> Male / Female / Other</li>
+          <li><strong>Marital Status:</strong> Single / Married</li>
+          <li><strong>Languages:</strong> English, Hindi, Telugu (example)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Objective</h2>
+        <p>Short objective statement (1–2 lines). Example: "To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills."</p>
+      </section>
+
+      <section class="full">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>Year – Degree</strong>, Institution Name — (Board/University) — Percentage/Grade</li>
+          <li>2021–2024 – B.Sc/B.Tech in Computer Science, Example University — 8.2 CGPA</li>
+          <li>2019 – Intermediate, Example College — 85%</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React / Node.js / Express (if applicable)</li>
+          <li>Git, SQL / NoSQL</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Project / Internship</h2>
+        <ul>
+          <li><strong>Project Name</strong> — Brief 1-line description (tech used).</li>
+          <li><strong>Internship</strong> — Company Name (Month Year – Month Year): short responsibility or achievement.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Reading, Coding, Photography, Travelling</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Reference</h2>
+        <p>Available on request.</p>
+      </section>
+
+      <section class="full" style="text-align:center; margin-top:10px; background:transparent; box-shadow:none;">
+        <small class="contact">I hereby declare that the information given above is true to the best of my knowledge.</small>
+        <div style="margin-top:10px; font-size:13px; color:var(--muted)">Place: __________ &nbsp; &nbsp; Date: __________</div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
